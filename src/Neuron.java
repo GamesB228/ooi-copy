@@ -38,7 +38,7 @@ public class Neuron {
         double T, Y, bo, a;
         boolean run = true;
         for (int iter = 1; run; iter++){
-            System.out.println("\n" + iter + "iteration:");
+            System.out.println("\n" + iter + " iteration:");
             run = false;
             System.out.printf("%10s%10s%10s%10s%10s%10s%10s%10s%10s%10s%10s%10s%10s%10s%10s%10s%10s\n",
                     "w1", "w2", "w3", "w4", "o", "x1", "x2", "x3", "a", "Y", "T",
@@ -52,7 +52,7 @@ public class Neuron {
                         if (X[0] == 1 || X[1] == 1 || X[2] == 1) T = 1;
                         else T = 0;
                         Y = result(X);
-                        if (run || T!=Y) run = true;
+                        if (T!=Y) run = true;
                         a = function(X);
                         bW[3] = n * (T - Y);
                         for (int l = 0; l < 3; l++) {
