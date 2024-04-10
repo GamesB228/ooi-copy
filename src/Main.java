@@ -15,7 +15,7 @@ public class Main {
         boolean run=true;
         int choice;
         int[] X = new int[3];
-        System.out.println("Changed string:");
+        System.out.println("MEGA changed string:");
         while(run){
             System.out.println("\nChoose option:\n1 - Training\n2 - Calculating\nOther - Finish"); //Вибір режиму роботи
             choice=scan.nextInt();
